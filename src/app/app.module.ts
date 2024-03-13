@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CerfStorageModule } from './cerf-storage/cerf-storage.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +10,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    CerfStorageModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,15 @@
+<ng-container *ngIf="certificates.length === 0; else elseTemplate">
+    <p class="cert-list-empty">Немає жодного сертифікату</p>
+</ng-container>
+<ng-template #elseTemplate>
+    <div class="cert-list">
+        <div 
+            *ngFor="let certificate of certificates; let i = index"
+            class="cert-list__item"
+            [ngClass]="selectedCertificateId === i ? 'selected' : ''"
+            (click)="onChange(i)"
+        >
+            {{certificate.commonName}}
+        </div>
+    </div>
+</ng-template>

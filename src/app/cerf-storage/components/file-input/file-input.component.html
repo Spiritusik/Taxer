@@ -1,0 +1,27 @@
+<div 
+    class="file-input"
+    (drop)="onDrop($event)"
+    (dragend)="stopDrag($event)"
+    (dragover)="onDragOver($event)"
+    (dragleave)="stopDrag($event)"
+    [ngClass]="isDragging ? 'file-input-hover' : ''"
+>
+    <p class="file-input__title">
+        Перетягніть файл сертифікату сюди <br/>
+        aбо
+    </p>
+    
+    <input 
+        type="file" 
+        id="input-file-btn" 
+        accept=".cer" 
+        (change)="onFileChange($event)"
+        hidden
+    />
+    <label 
+        class="file-input__btn" 
+        for="input-file-btn" 
+    >
+        Виберіть через стандартний діалог
+    </label>
+</div>

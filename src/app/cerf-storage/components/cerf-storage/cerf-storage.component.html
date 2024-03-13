@@ -1,0 +1,14 @@
+<div class="cerf-storage">
+    <app-left-side 
+        [isAddCertificate]="isAddCertificate"
+        (isAddCertificateSwitchEvent)="isAddCertificateSwitchEvent($event)"
+        [certificates]="certificates"
+        [selectedCertificateId]="selectedCertificateId"
+        (selectedCertificateChange)="onSelectedCertificateChange($event)"
+    ></app-left-side>
+    <app-right-side
+        (fileChange)="onFileLoad($event)"
+        [isAddCertificate]="isAddCertificate"
+        [certificateInfo]="certificates[selectedCertificateId]"
+        ></app-right-side>
+</div>

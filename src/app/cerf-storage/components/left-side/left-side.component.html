@@ -1,0 +1,14 @@
+<div class="left-side">
+    <button 
+        class="left-side__button"
+        (click)="onButtonClick()"
+    >
+        {{isAddCertificate ? 'Додати' : 'Назад'}}
+    </button>
+    <app-cert-list
+        *ngIf="isAddCertificate"
+        [certificates]="certificates"
+        [selectedCertificateId]="selectedCertificateId"
+        (selectedCertificateChange)="onSelectedCertificateChange($event)"
+    ></app-cert-list>
+</div>

@@ -18,6 +18,10 @@
     "@angular/platform-browser": "^17.2.0",
     "@angular/platform-browser-dynamic": "^17.2.0",
     "@angular/router": "^17.2.0",
+    "@lapo/asn1js": "^1.2.4",
+    "asn1js": "^3.0.5",
+    "ngx-dropzone": "^3.1.0",
+    "pkijs": "^3.0.16",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
@@ -27,6 +31,7 @@
     "@angular/cli": "^17.2.1",
     "@angular/compiler-cli": "^17.2.0",
     "@types/jasmine": "~5.1.0",
+    "@types/lapo__asn1js": "^1.2.5",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",

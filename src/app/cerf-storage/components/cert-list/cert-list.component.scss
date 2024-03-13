@@ -1,0 +1,45 @@
+.cert-list-empty {
+    margin-top: 20px;
+    font-size: 24px;
+    box-sizing: border-box;
+    width: 35vw;
+    text-align: center;
+}
+
+.cert-list {
+    margin-top: 20px;
+    font-size: 24px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 35vw;
+
+    &__item {
+        position: relative;
+        box-sizing: border-box;
+        border: 1px solid black;
+        padding: 0px 10px;
+        display: block;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        line-height: 2.5em;
+        white-space: pre-wrap;
+        text-wrap: wrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        cursor: pointer;
+
+        &.selected {
+            cursor: default;
+            background: rgba(0,0,0,0.1);
+            padding: 0px 2rem 0px 10px;
+            &::after{
+                content: '►';
+                margin-left: auto;
+                position: absolute;
+                right: 0.25rem;
+                top: 0;
+            }
+        }
+    }
+}

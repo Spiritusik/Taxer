@@ -1,0 +1,6 @@
+<div *ngIf="certificateInfo" class="cert-info">
+    <p><Strong>Common Name:</Strong> {{certificateInfo.commonName}}</p>
+    <p><Strong>Issuer CN:</Strong> {{certificateInfo.issuerCN}}</p>
+    <p><Strong>Valid From:</Strong> {{certificateInfo.validFrom | date: "YYYY-MM-dd"}}</p>
+    <p><Strong>Valid To:</Strong> {{certificateInfo.validTo | date: "YYYY-MM-dd"}}</p>
+</div>

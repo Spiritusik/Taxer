@@ -1,0 +1,12 @@
+<div class="right-side">
+    <ng-container *ngIf="isAddCertificate; else elseTemplate">
+        <app-cert-info
+            [certificateInfo]="certificateInfo"
+        ></app-cert-info>
+    </ng-container>
+    <ng-template #elseTemplate>
+        <app-file-input
+            (fileChange)="onFileChange($event)"
+        ></app-file-input>
+    </ng-template>
+</div>
